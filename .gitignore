@@ -1,0 +1,8 @@
+# all ignores
+node_modules/
+package.json
+package-lock.json
+
+# in 04
+04/04-webpack/
+04/dist/
