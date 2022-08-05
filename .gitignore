@@ -1,4 +1,5 @@
 # all ignores
+downloaded-sources/
 three.js-master.zip
 three.js-master/
 README.md
