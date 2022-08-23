@@ -11,3 +11,6 @@ package-lock.json
 # in 04
 04/04-webpack/
 04/dist/
+
+# in 13 : font
+CelestialModern_Regular.json
