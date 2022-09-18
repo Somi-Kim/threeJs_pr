@@ -28,7 +28,7 @@ const matcapTexture = textureLoader.load('/textures/matcaps/2.png')
 
 // const material = new THREE.MeshMatcapMaterial({ matcap: matcapTexture, side: DoubleSide})
 // const material = new THREE.MeshStandardMaterial()
-const material = new THREE.MeshBasicMaterial()
+const material = new THREE.MeshStandardMaterial()
 material.side = DoubleSide
 // material.metalness = 0.45
 // material.roughness = 0.65
@@ -176,7 +176,7 @@ control.enableDamping = true // 컨트롤에 관성을 부여 -> 반드시 .upda
  * Light
  */
 // let intensity = 10
-const light = new THREE.AmbientLight(0xff0000, 1)
+const light = new THREE.HemisphereLight(0xff0000, 0x0000ff, 0.3)
 console.log(light)
 gui.add(light, 'intensity').max(5).min(-5).step(0.1)
 scene.add(light)
